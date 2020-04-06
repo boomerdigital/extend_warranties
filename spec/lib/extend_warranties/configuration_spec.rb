@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe ExtendWarranties::Configuration do
-  let(:access_token) { 'access_token' }
-  let(:store_id) { 'store_id' }
+  let(:access_token) { ENV['EXTEND_ACCESS_TOKEN'] }
+  let(:store_id) { ENV['EXTEND_STORE_ID'] }
   let(:env) { :sandbox }
 
   subject do
