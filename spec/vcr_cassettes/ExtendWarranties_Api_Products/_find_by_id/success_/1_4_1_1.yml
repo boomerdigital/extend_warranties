@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/products/2324f800-7575-4c65-bd2c-588c89e8ab7f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '436'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 06 Apr 2020 22:26:16 GMT
+      X-Amzn-Requestid:
+      - fad7c316-e620-4603-82f1-f918ca21c2ad
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - KlflVFEqIAMF4Ng=
+      X-Amzn-Trace-Id:
+      - Root=1-5e8bac88-6b6a1f8a002a2e3e4aa56389
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cd63f8907abcdddac217d30e29b586a0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - JFK51-C1
+      X-Amz-Cf-Id:
+      - 0HKW6XkZiJa7wlSplpw2LstjQPo9ck-38rWNkSii2NOaIxf3e-2YdQ==
+    body:
+      encoding: UTF-8
+      string: '{"createdAt":1586197186976,"storeId":"6da4000d-2a35-4217-980a-cfb08ed3757f","enabled":true,"approved":true,"overrides":{"mfrWarranty":{}},"updatedAt":1586202373579,"identifiers":{},"plans":["10001-misc-elec-base-replace-1y","10001-misc-elec-base-replace-2y","10001-misc-elec-base-replace-3y"],"mfrWarranty":{},"warrantyStatus":"pending","price":2599,"referenceId":"2324f800-7575-4c65-bd2c-588c89e8ab7f","title":"Explosive
+        Tennis Balls"}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 22:26:16 GMT
+recorded_with: VCR 5.1.0
