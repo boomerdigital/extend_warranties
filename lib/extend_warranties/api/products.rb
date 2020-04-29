@@ -16,6 +16,13 @@ module ExtendWarranties
         handle_response(resp)
       end
 
+      def update(store_id, product_id, args = {})
+        raise ArgumentError, 'store_id is required' if store_id.blank?
+
+        resp = connection.put "/stores/#{store_id}/products/#{product_id}", args
+        handle_response(resp)
+      end
+
       def find_by_id(store_id, product_id, args = {})
         raise ArgumentError, 'store_id is required' if store_id.blank?
         raise ArgumentError, 'product_id is required' if product_id.blank?

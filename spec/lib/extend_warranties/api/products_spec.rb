@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 RSpec.describe ExtendWarranties::Api::Products, :vcr do
   let(:access_token) { ENV['EXTEND_ACCESS_TOKEN'] }
@@ -32,8 +31,20 @@ RSpec.describe ExtendWarranties::Api::Products, :vcr do
     its(:success?) { is_expected.to eql true }
   end
 
+  describe '#update' do
+    let(:product_id) { '2324f800-7575-4c65-bd2c-22' }
+    let(:params) {
+      {
+        'price': 3599
+      }
+    }
+
+    subject { client.products.update(store_id, product_id, params) }
+    its(:success?) { is_expected.to eql true }
+  end
+
   # describe '#delete' do
-  #   let(:reference_id) { '2324f800-7575-4c65-bd2c-22' }
+  #   let(:reference_id) { '6789012345' }
 
   #   subject { client.products.delete(store_id, reference_id) }
   #   its(:success?) { is_expected.to eql true }

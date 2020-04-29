@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/products/6789012345
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 14:36:57 GMT
+      X-Amzn-Requestid:
+      - 695666cc-13e1-4852-bd3d-65181e7d3ad1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwOZWG4ioAMFnMQ=
+      X-Amzn-Trace-Id:
+      - Root=1-5ea99108-96ea16144714505c5d252f50
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f2a1384c219ffd4f6867ab3f186e613a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - ergPtXDg8jaEhgRyHqPp-1ndnhzblh77hnIn6eMbQjfPzyWr50uEjw==
+    body:
+      encoding: UTF-8
+      string: success
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 14:36:57 GMT
+recorded_with: VCR 5.1.0

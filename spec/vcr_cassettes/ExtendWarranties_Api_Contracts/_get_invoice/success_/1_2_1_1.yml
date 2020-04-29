@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/contracts/fc893e2f-a368-46b6-b5b0-9525bf666b30/invoice
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '972'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 15:03:58 GMT
+      X-Amzn-Requestid:
+      - c1c24c07-8637-4a0f-85ec-da259a2843c4
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwSVgGQgoAMF16A=
+      X-Amzn-Trace-Id:
+      - Root=1-5ea99756-cba7140cad4c3f147c6ceb00
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 8a771ca27e5a3c9e06b12b7af5d25aa4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - K0E5Yp5suaxGCDFzNXi7FWxqYhkgTHHPzN3ZYPUGtF7m-euJGwMoAA==
+    body:
+      encoding: UTF-8
+      string: '{"totalAmountDue":{"currencyCode":"USD","value":2699},"payer":{"name":"Modded
+        Euros"},"payee":{"name":"Extend, Inc.","email":"billing@helloextend.com","address":{"country":"USA","province":"CA","city":"San
+        Francisco","address1":"535 Mission St., 11th Floor","postalCode":"94526"}},"details":{"storeId":"6da4000d-2a35-4217-980a-cfb08ed3757f","invoiceDate":"2020-04-29T15:02:02.969Z"},"id":"fc893e2f-a368-46b6-b5b0-9525bf666b30","items":[{"unitPrice":{"currencyCode":"USD","value":2699},"metadata":{"planId":"10001-auto-part-base-replace-1y","product":{"name":"Explosive
+        Baseballs","referenceId":"2324f800-7575-4c65-bd2c-22","price":{"currencyCode":"USD","value":3599}}},"quantity":1,"lineTotal":{"currencyCode":"USD","value":2699},"discount":{"percent":25,"amount":{"currencyCode":"USD","value":900},"label":"Merchant
+        revenue share"},"title":"10001-auto-part-base-replace-1y","transactionDate":"2020-04-29T14:55:23.000Z","retailPrice":{"currencyCode":"USD","value":3599}}]}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 15:03:58 GMT
+recorded_with: VCR 5.1.0

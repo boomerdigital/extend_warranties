@@ -6,7 +6,7 @@ module ExtendWarranties
         raise ArgumentError, 'store_id is required' if store_id.blank?
         raise ArgumentError, 'product_id is required' if product_id.blank?
 
-        resp = connection.get "/offers?storeId={storeId}&productId={productId}", args
+        resp = connection.get "/offers?storeId=#{store_id}&productId=#{product_id}", args
         handle_response(resp)
       end
     end

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/contracts/06d6e4ac-1878-4a71-8f0f-1f5e34efdd94/refund
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '103'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 15:06:50 GMT
+      X-Amzn-Requestid:
+      - 213c4bb5-6c93-45ea-bb41-b0f245923f88
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwSxjGy4oAMFRXw=
+      X-Amzn-Trace-Id:
+      - Root=1-5ea99809-a9d83a004d9f2e88462548b0
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 8a771ca27e5a3c9e06b12b7af5d25aa4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - OOonTcwFgp4wqWC_O4oJElyFP-Pda3WS-DvJRO3lu_gfXzRpBwmgqA==
+    body:
+      encoding: UTF-8
+      string: '{"code":"other","message":"An internal server error occurred. Please
+        try again.","type":"server_error"}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 15:06:50 GMT
+recorded_with: VCR 5.1.0

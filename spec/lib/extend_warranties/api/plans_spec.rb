@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe ExtendWarranties::Client do
+RSpec.describe ExtendWarranties::Api::Plans, :vcr do
   let(:access_token) { ENV['EXTEND_ACCESS_TOKEN'] }
   let(:store_id) { ENV['EXTEND_STORE_ID'] }
   let(:env) { :sandbox }
@@ -13,10 +13,10 @@ RSpec.describe ExtendWarranties::Client do
     )
   end
 
-  subject { client }
-
-  it { is_expected.to respond_to :products }
-  it { is_expected.to respond_to :plans }
-  it { is_expected.to respond_to :contracts }
-  it { is_expected.to respond_to :offers }
+  describe '#all' do
+    subject { client.plans.all(store_id) }
+    its(:success?) { is_expected.to eql true }
+  end
 end
+
+

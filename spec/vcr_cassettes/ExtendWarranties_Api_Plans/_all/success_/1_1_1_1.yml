@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-demo.helloextend.com/offers/list?storeId=6da4000d-2a35-4217-980a-cfb08ed3757f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3164'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 14:29:42 GMT
+      X-Amzn-Requestid:
+      - 9cdc2f1a-76ed-4fc2-b44d-2f1e3305f7a6
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwNVfEOBIAMFcXw=
+      X-Amzn-Trace-Id:
+      - Root=1-5ea98f56-58ec22a85d7cabac849f6566
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b3fa6483b226ef7cc87d8bab653f621c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - qeSZSdw-di5056sA8n6aELjoYl9fJONq6lFjIT_4Q9j4A4fZVXt_MA==
+    body:
+      encoding: UTF-8
+      string: '[{"id":"10001-auto-part-base-replace-1y","prices":{"max":1099,"min":549,"points":[549,1099]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Auto Part","termLength":12}},{"id":"10001-auto-part-base-replace-2y","prices":{"max":1399,"min":699,"points":[699,1399]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Auto Part","termLength":24}},{"id":"10001-auto-part-base-replace-3y","prices":{"max":1799,"min":899,"points":[899,1799]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Auto Part","termLength":36}},{"id":"10001-computer-adh-repair-1y","prices":{"max":10900,"min":10900,"points":[10900]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan with Accident Coverage - Computer","termLength":12}},{"id":"10001-computer-adh-repair-2y","prices":{"max":17900,"min":17900,"points":[17900]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan with Accident Coverage - Computer","termLength":24}},{"id":"10001-computer-adh-repair-3y","prices":{"max":27900,"min":27900,"points":[27900]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan with Accident Coverage - Computer","termLength":36}},{"id":"10001-computer-base-replace-1y","prices":{"max":5499,"min":5499,"points":[5499]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Computer","termLength":12}},{"id":"10001-computer-base-replace-2y","prices":{"max":9499,"min":9499,"points":[9499]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Computer","termLength":24}},{"id":"10001-computer-base-replace-3y","prices":{"max":13900,"min":13900,"points":[13900]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Computer","termLength":36}},{"id":"10001-misc-elec-base-replace-1y","prices":{"max":339,"min":339,"points":[339]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Electronics","termLength":12}},{"id":"10001-misc-elec-base-replace-2y","prices":{"max":649,"min":649,"points":[649]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Electronics","termLength":24}},{"id":"10001-misc-elec-base-replace-3y","prices":{"max":999,"min":999,"points":[999]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Electronics","termLength":36}},{"id":"10001-portable-audio-base-replace-1y","prices":{"max":389,"min":389,"points":[389]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Portable Audio","termLength":12}},{"id":"10001-portable-audio-base-replace-2y","prices":{"max":799,"min":799,"points":[799]},"details":{"imageUrl":"https://sdk.helloextend.com/extend_icon.png","title":"Extend
+        Protection Plan - Portable Audio","termLength":24}}]'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 14:29:42 GMT
+recorded_with: VCR 5.1.0
