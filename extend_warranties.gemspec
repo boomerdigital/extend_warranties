@@ -6,8 +6,8 @@ require "extend_warranties/version"
 Gem::Specification.new do |spec|
   spec.name          = "extend_warranties"
   spec.version       = ExtendWarranties::VERSION
-  spec.authors       = ["Allison Reilly"]
-  spec.email         = ["acreilly3@gmail.com"]
+  spec.authors       = ["Allison Reilly", "Daniel J. Pritchett"]
+  spec.email         = ["acreilly3@gmail.com", "dpritchett@gmail.com"]
 
   spec.summary       = %q{Ruby client for Extend API}
   spec.description   = %q{Ruby client for Extend API}
