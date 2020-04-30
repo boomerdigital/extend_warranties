@@ -7,6 +7,6 @@
 /spec/reports/
 /tmp/
 /Gemfile.lock
-
+/spec/env.yml
 # rspec failure tracking
 .rspec_status

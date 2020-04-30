@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-demo.helloextend.com/offers?productId=2324f800-7575-4c65-bd2c-588c89e8ab7f&storeId=6da4000d-2a35-4217-980a-cfb08ed3757f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1797'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 14:31:22 GMT
+      X-Amzn-Requestid:
+      - cda284d5-f167-465d-8ef8-1f9d21b3d400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwNklHVYIAMFaoQ=
+      Cache-Control:
+      - max-age=120
+      X-Amzn-Trace-Id:
+      - Root=1-5ea98fb6-e6fb899e144de6447c693a70
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 72aa1f6d307a536bbaffdcdb498b124d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - yL6JRtK-FgABhuNh1ZYcUuM0R-tmNB5OjtNs2Z0r6prlIta72nxqgw==
+    body:
+      encoding: UTF-8
+      string: '{"product":{"name":"Explosive Tennis Balls"},"plans":[{"contract":{"coverageIncludes":"base","serviceType":"replace","replacementType":"new","termLength":12,"deductible":0,"category":"consumer_electronics","coverageStarts":"after"},"price":339,"title":"Extend
+        Protection Plan - Electronics","id":"10001-misc-elec-base-replace-1y","imageUrl":"https://sdk.helloextend.com/extend_icon.png","url":"https://demo.customers.extend.com/plan_details/10001-misc-elec-base-replace-1y"},{"contract":{"coverageIncludes":"base","serviceType":"replace","replacementType":"new","termLength":24,"deductible":0,"category":"consumer_electronics","coverageStarts":"after"},"price":649,"title":"Extend
+        Protection Plan - Electronics","id":"10001-misc-elec-base-replace-2y","imageUrl":"https://sdk.helloextend.com/extend_icon.png","url":"https://demo.customers.extend.com/plan_details/10001-misc-elec-base-replace-2y"},{"contract":{"coverageIncludes":"base","serviceType":"replace","replacementType":"new","termLength":36,"deductible":0,"category":"consumer_electronics","coverageStarts":"after"},"price":999,"title":"Extend
+        Protection Plan - Electronics","id":"10001-misc-elec-base-replace-3y","imageUrl":"https://sdk.helloextend.com/extend_icon.png","url":"https://demo.customers.extend.com/plan_details/10001-misc-elec-base-replace-3y"}],"marketing":{"buttons":{"headline":"Add
+        product protection offered by","headlineAdh":"Add accident protection offered
+        by","subhead":"Add an extended warranty from","linkText":"Learn more"},"modal":{"headline":"Protection
+        from defects and breakdowns","bullet1":"Hassle-free claims","bullet2":"24/7
+        live support","bullet3":"Fast repair or replacement","bullet4":"Free shipping
+        for repairs","linkText":"See plan details","buyText":"Add protection plan","declineText":"No,
+        thanks"}}}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 14:31:22 GMT
+recorded_with: VCR 5.1.0

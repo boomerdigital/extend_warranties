@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/contracts
+    body:
+      encoding: UTF-8
+      string: '{"transactionId":"c57ed096-24ef-49a4-a20a-d1b8bf770980","transactionDate":1588172123,"currency":"USD","customer":{"email":"acreilly3@gmail.com","name":"Allison"},"product":{"referenceId":"2324f800-7575-4c65-bd2c-22","purchasePrice":3599},"plan":{"purchasePrice":3599,"planId":"10001-auto-part-base-replace-1y"}}'
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '355'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 15:02:00 GMT
+      X-Amzn-Requestid:
+      - d545aa49-f6ce-4d7f-9c6e-e08d0d083e83
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - LwSDiFBNoAMFqlA=
+      X-Amzn-Trace-Id:
+      - Root=1-5ea996e3-f76aa4bab01303bb3df0873a
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 130ce7c752c5865952ded89032560b33.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C3
+      X-Amz-Cf-Id:
+      - SEjhe0qPOGV1j9MVLOViSdNZvovacnGIu35W7Q7t7IUOVzFzui_5YA==
+    body:
+      encoding: UTF-8
+      string: '{"transactionId":"c57ed096-24ef-49a4-a20a-d1b8bf770980","transactionDate":1588172123,"currency":"USD","customer":{"email":"acreilly3@gmail.com","name":"Allison"},"product":{"referenceId":"2324f800-7575-4c65-bd2c-22","purchasePrice":3599},"plan":{"purchasePrice":3599,"planId":"10001-auto-part-base-replace-1y"},"id":"fc893e2f-a368-46b6-b5b0-9525bf666b30"}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 15:02:00 GMT
+recorded_with: VCR 5.1.0

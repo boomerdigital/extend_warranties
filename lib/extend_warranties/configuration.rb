@@ -3,14 +3,12 @@ module ExtendWarranties
     attr_reader :sandbox, :base_url, :env, :access_token, :store_id, :headers
 
     REST_URLS = {
-      sandbox:    'https://api.helloextend.com',
+      sandbox:    'https://api-demo.helloextend.com',
       production: 'https://api.helloextend.com'
     }
 
-
     SANDBOX = :sandbox
     PRODUCTION = :production
-
 
     def initialize(args = {})
       validate_args(args)
@@ -18,10 +16,8 @@ module ExtendWarranties
       @env = args[:env].to_sym
       @sandbox = @env == SANDBOX
       @base_url = REST_URLS[env]
-
-      @headers = args[:headers] || {}
-
       @access_token = args[:access_token]
+      @headers = args[:headers] || { 'Content-Type' => 'application/json', 'X-Extend-Access-Token' => @access_token }
       @store_id = args[:store_id]
     end
 

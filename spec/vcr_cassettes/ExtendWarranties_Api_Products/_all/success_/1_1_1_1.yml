@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '699'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 06 Apr 2020 22:26:12 GMT
+      X-Amzn-Requestid:
+      - 00f7eb96-13db-404f-84b2-d817bb8ded55
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - KlfkpEVfIAMFtzQ=
+      X-Amzn-Trace-Id:
+      - Root=1-5e8bac84-6cddefcd61ec4d3bd9ae16cc
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4a8de0adddd15d5e8cadba8208771b58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - JFK51-C1
+      X-Amz-Cf-Id:
+      - XJ_i1h4lh30b6HkdAbbTLI2cZvMq6QlshvR7b1i1Ma9-iCheKRS8iA==
+    body:
+      encoding: UTF-8
+      string: '[{"enabled":false,"approved":false,"updatedAt":1586211855273,"createdAt":1586211855273,"warrantyStatus":"pending","storeId":"6da4000d-2a35-4217-980a-cfb08ed3757f","price":2599,"title":"Explosive
+        Basketballs","referenceId":"2324f800-7575-4c65-bd2c-2","plans":[]},{"createdAt":1586197186976,"storeId":"6da4000d-2a35-4217-980a-cfb08ed3757f","enabled":true,"approved":true,"overrides":{"mfrWarranty":{}},"updatedAt":1586202373579,"identifiers":{},"plans":["10001-misc-elec-base-replace-1y","10001-misc-elec-base-replace-2y","10001-misc-elec-base-replace-3y"],"mfrWarranty":{},"warrantyStatus":"pending","price":2599,"referenceId":"2324f800-7575-4c65-bd2c-588c89e8ab7f","title":"Explosive
+        Tennis Balls"}]'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 22:26:13 GMT
+recorded_with: VCR 5.1.0

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-demo.helloextend.com/stores/6da4000d-2a35-4217-980a-cfb08ed3757f/products
+    body:
+      encoding: UTF-8
+      string: '{"price":2599,"title":"Explosive Baseballs","referenceId":"2324f800-7575-4c65-bd2c-22"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-Extend-Access-Token:
+      - "<BASIC_AUTH>"
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '259'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 06 Apr 2020 22:26:14 GMT
+      X-Amzn-Requestid:
+      - ed425321-db3a-489b-bdd9-98f2b39b02f7
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - KlflBFpYIAMFdhA=
+      X-Amzn-Trace-Id:
+      - Root=1-5e8bac86-49d3613c7aae86989dcfc530
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ab00cdb05d9e58b648b9b6b09875b196.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - JFK51-C1
+      X-Amz-Cf-Id:
+      - k4-D-JjtB_L8t3VRDyD9s978Z_T8Za9ctY9tA9N8__E0nO4hyWsQXw==
+    body:
+      encoding: UTF-8
+      string: '{"price":2599,"title":"Explosive Baseballs","referenceId":"2324f800-7575-4c65-bd2c-22","plans":[],"enabled":false,"approved":false,"warrantyStatus":"pending","storeId":"6da4000d-2a35-4217-980a-cfb08ed3757f","updatedAt":1586211974778,"createdAt":1586211974778}'
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 22:26:15 GMT
+recorded_with: VCR 5.1.0
